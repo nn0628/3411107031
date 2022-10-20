@@ -71,5 +71,41 @@
         <li>004</li>
         <li>005</li>
      </ol>
+     <hr>
+     <h4>input輸入</h4>
+     張號:<input type="text">
+     密碼:<input type="password">
+     輸入數字: <input type="number" min="0" max="10"
+                 onkeyup="if(value<0)
+                            value=0
+                         else if(value>10)
+                            value=10
+                            " >
+    <br>
+     複選:
+     <input type="checkbox"> 看書
+     <input type="checkbox">旅行
+     <br>
+     單選:
+     <input type="radio" name="sex">男生
+     <input type="radio" name="sex">女生
+     <br>
+     按妞:
+     <input type="button" value=" 按妞">
+     <input type="submit" value=" 按妞2">
+     <button> 按妞3</button>
+     <br>
+     日期:
+     <input type="date" min="2022-10-01" max="2022-10-31">
+     <br>
+     時間:
+     <input type="time">
+     <br>
+     檔案上傳:
+     <input type="file">
+     <br>
+     <h4>html實體</h4>
+     &copy;
+               
 </body>
 </html>
