@@ -26,7 +26,7 @@
         input[type=text]{
             width: 50px;
         }
-        /* 後代選擇器(使用空白符號) */
+        /* 後代選擇器(使空白符用號) */
         .child a{
             color: green;
         }
@@ -34,9 +34,102 @@
         .child1>a{
             color: green;
         }
+        /* 同層相鄰選擇器(使用+符號) */
+        .child2+p{
+            color: red;
+        }
+        /* 同層全體選擇器(使用~符號) */
+        .child3~p{
+            color: blue;
+        }
+        /* 偽類選擇器(使用:符號) */
+        .child4:hover{
+            color: red;
+        }
+        /* 偽元素選擇器(使用::符號) */
+        .child5::before{
+            content: "大家好 ,";
+        }
+        .child5::after{
+            content: "請多多指教";
+        }
     </style>
 </head>
+</head>
 <body>
-    
+    <h4>型態選擇器(標籤)</h4>
+    <span>型態選擇器</span>
+    <span>型態選擇器2</span>
+    <hr>
+    <h4>calss選擇器(使用.符號)</h4>
+    <a href="#" class="one two">calss選擇器</a>
+    <hr>
+    <h4>ID選擇器(使用#符號)</h4>
+    <a href="#" id="one ">ID選擇器</a>
+    <hr>
+    <h4>屬性選擇器(使用屬性=值)</h4>
+    姓名<input type="text">
+    電話<input type="text">
+    地址<input type="text">
+    <hr>
+    <h4>後代選擇器(使空白符用號)</h4>
+    <div class="child">
+        <p>
+            <a href="#">div>p>a</a>
+        </p>
+    </div>
+    <hr>
+    <h4>子選擇器(使用>符號)</h4>
+    <div class="child1">
+        <p>
+           <a href="#">div>p>a</a>
+        </p>
+    </div>
+    <div class="child1">
+        <a href="#">div>a</a>
+    </div>
+    <hr>
+    <h4>同層相鄰選擇器(使用>符號)</h4>
+    <p>1</p>
+    <p>2</p>
+    <div class="child2">
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <p>5</p>
+    <p>6</p>
+    <div class="child2">
+        <p>7</p>
+        <p>8</p>
+    </div>
+    <p>9</p>
+    <p>10</p>
+    <hr>
+    <h4>同層全體選擇器(使用~符號)</h4>
+    <p>1</p>
+    <p>2</p>
+    <div class="child3">
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <p>5</p>
+    <p>6</p>
+    <div class="child3">
+        <p>7</p>
+        <p>8</p>
+    </div>
+    <p>9</p>
+    <p>10</p>
+    <hr>
+    <h4>偽類選擇器(使用:符號)</h4>
+    <a href="#" class="child4">偽類選擇器</a>
+    <hr>
+    <h4>偽類選擇器(使用::符號)</h4>
+    <div class="child5">小名</div>
+    <div class="child5">小華</div>
+    <div class="child5">小新</div>
+    <hr>
+         
+
 </body>
 </html>
