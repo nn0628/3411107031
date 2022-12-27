@@ -58,15 +58,110 @@
          .font_family{
              font-family: "標楷體";
          }
+         /* 1ike連结*/
+           /*未訪問*/
+           .a_style:link{
+             color: red;
+        }
+        /*訪問過 */
+        .a_style:visited{
+           color: yellow;
+        }
+        /* 移入*/
+        .a_style:hover{
+           color: green;
+        }
+        /*點下去*/
+        .a style:active{
+           color: pink;
+        }
+       /* List列表*/
+       .ol_style{
+       /*類型*/
+       /* 都沒有*/
+       /* 1ist-style-type: none; */
+       /*實心圓*/
+       /* 1ist-style-type: disc; */
+       /*數字*/
+       /* list-style-type: decimal ; */
+       /*空心图*/
+       /* list-style-type: circle; */
+       /*方形形*/
+       /* list-style-type: square ; */
+       /*羅馬數字*/
+       /* list-style-type: upper-roman; */
+       /*英文*/
+       list-style-type: lower-alpha;
+       /*位置 */
+       list-style-position: inside;
+       /* 圖片 */
+       list-style-image: url("https://fakeimg.p1/15x15");
+       }
+       /* Tanle表格 */
+       .table_style{
+           /* 邊框合併 */   
+           border-collapse: collapse;
+           width: 300px;
+           height: 300px;
+       }
+       .table_style td{
+          /* 水平 */
+          text-align: center;
+          /* 垂直 */
+          vertical-align: top;
+       }    
+          /* 偶數行 */
+        .table_style tr:nth-child(even){
+            background-color: blue;
+            color: white;
+        }
+         /* 奇數行 */
+        .table_style tr:nth-child(odd){
+            background-color: yellow;
+        }
          </style>
  </head>
- <body>
+<body>
      <div class="text_color text_align text_line_height text_decoration text_indent text_letter_spacing">
        字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css字體css
      </div>
      <div class="font_style font_weight font_size font_family">
          Font字型
      </div>
-     123
- </body>
+     <a href="#" class="a_style">google</a>
+     <ol class="ol_style">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        123
+     </ol>
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        123
+     </ul>
+     <table border="1" cellspacing="0" cellpadding="0" class="table_style">
+        <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+         <tr>
+            <td>001</td>
+            <td>002</td>
+            <td>003</td>
+            <td>004</td>
+            <td>005</td>
+        </tr>
+</body>
  </html>
