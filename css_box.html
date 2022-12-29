@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box_style{
+            /* 外間距(margin) */
+            /* 上下左右 */
+            /* margin: 10px; */
+            /* 上下 左右 */
+            /* margin: 10px 5px; */
+            /* 上左下右 */
+            margin: 5px 10px 15px 20px;
+            /* 留白(padding) */
+            /* 上下左右 */
+            /* padding:10px; */
+            /* 上下 左右 */
+            /* padding:10px 20px; */ 
+            /* 上右下左 */
+            padding:3px 13px 23px 33px;
+            width: 300px;
+            height: 150px;
+
+        }
+        .border_style{
+            /* 框線租細 */
+            border-width: 10px;
+            /* 框線類型 */
+            border-style: dashed;
+            /* 框線顏色 */
+            border-color: red;
+        }
+        /* Display顯示 */
+        .display1{
+            display: inline;
+        }
+        .display2{
+            display: block;
+        }
+        .display3{
+            background-color: red;
+            width: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_style border_style">div</div>
+    <hr>
+    <div class="display1">div1</div>
+    <div class="display1">div2</div>
+    <span class="display2">span1</span>
+    <span class="display2">span2</span>
+    <span class="display3">span3</span>
+    123
+    <hr>
+    <span>span1</span>
+    <span style="display: none;">span2</span>
+    <span>span3</span>
+    <hr>
+    <span>span1</span>
+    <span style="visibility: hidden;">span2</span>
+    <span>span3</span>
+</body>
+</html>
